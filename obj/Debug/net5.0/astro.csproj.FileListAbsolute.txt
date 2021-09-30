@@ -1,0 +1,16 @@
+C:\Users\GBroberg\Desktop\Test Apps\astro\bin\Debug\net5.0\astro.exe
+C:\Users\GBroberg\Desktop\Test Apps\astro\bin\Debug\net5.0\astro.deps.json
+C:\Users\GBroberg\Desktop\Test Apps\astro\bin\Debug\net5.0\astro.runtimeconfig.json
+C:\Users\GBroberg\Desktop\Test Apps\astro\bin\Debug\net5.0\astro.runtimeconfig.dev.json
+C:\Users\GBroberg\Desktop\Test Apps\astro\bin\Debug\net5.0\astro.dll
+C:\Users\GBroberg\Desktop\Test Apps\astro\bin\Debug\net5.0\ref\astro.dll
+C:\Users\GBroberg\Desktop\Test Apps\astro\bin\Debug\net5.0\astro.pdb
+C:\Users\GBroberg\Desktop\Test Apps\astro\obj\Debug\net5.0\astro.csproj.AssemblyReference.cache
+C:\Users\GBroberg\Desktop\Test Apps\astro\obj\Debug\net5.0\astro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GBroberg\Desktop\Test Apps\astro\obj\Debug\net5.0\astro.AssemblyInfoInputs.cache
+C:\Users\GBroberg\Desktop\Test Apps\astro\obj\Debug\net5.0\astro.AssemblyInfo.cs
+C:\Users\GBroberg\Desktop\Test Apps\astro\obj\Debug\net5.0\astro.csproj.CoreCompileInputs.cache
+C:\Users\GBroberg\Desktop\Test Apps\astro\obj\Debug\net5.0\astro.dll
+C:\Users\GBroberg\Desktop\Test Apps\astro\obj\Debug\net5.0\ref\astro.dll
+C:\Users\GBroberg\Desktop\Test Apps\astro\obj\Debug\net5.0\astro.pdb
+C:\Users\GBroberg\Desktop\Test Apps\astro\obj\Debug\net5.0\astro.genruntimeconfig.cache
