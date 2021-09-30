@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Net.Http;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace astro
@@ -12,8 +14,22 @@ namespace astro
             using (var client = new HttpClient())
             {
                 var response = await client.GetStringAsync(ISS_API_URL);
-                System.Console.WriteLine(response.ToString());
+                var deserializedResponse = JsonSerializer.Deserialize<ISSResponseData>(response);
+                System.Console.WriteLine(deserializedResponse.number.ToString());
             }
         }
     }
+    internal class ISSResponseData
+    {
+        public IEnumerable<Person> people { get; set; }
+        public int number { get; set; }
+        public string message { get; set; }
+    }
+
+    internal class Person
+    {
+        public string craft { get; set; }
+        public string name { get; set; }
+    }
 }
+
