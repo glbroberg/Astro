@@ -19,18 +19,28 @@ namespace astro
         static async Task Main(string[] args)
         {
             _deserializedResponse = await GetISSData();
-            PrintResults(_deserializedResponse);
+            if (_deserializedResponse != null)
+            {
+                PrintResults(_deserializedResponse);
+            }
         }
 
         private static async Task<ISSResponseData> GetISSData()
         {
-            var deserializedResponse = new ISSResponseData();
-            using (var client = new HttpClient())
-            {
-                var response = await client.GetStringAsync(ISS_API_URL);
-                deserializedResponse = JsonSerializer.Deserialize<ISSResponseData>(response);
-            }
+            ISSResponseData deserializedResponse = null;
 
+            try
+            {
+                using (var client = new HttpClient())
+                {
+                    var response = await client.GetStringAsync(ISS_API_URL);
+                    deserializedResponse = JsonSerializer.Deserialize<ISSResponseData>(response);
+                }
+            }
+            catch (Exception e)
+            {
+                System.Console.WriteLine("There was a problem with your request: " + e.Message);
+            }
             return deserializedResponse;
         }
 
